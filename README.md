@@ -77,6 +77,13 @@ The root password is `steamlink123` and should be changed using the `passwd` com
 
 SSH access will remain enabled until a factory reset.
 
+### Disabling auto-standby
+
+You can change the auto-standby timeout with the following two files which are placed in the same directory on a USB drive:
+
+- `suspend_timeout_interactive.txt` - the number of seconds before the Link will ask if you're still using the device (default: `900`, set to `0` to disable)
+- `suspend_timeout_idle.txt` - the number of seconds before the Link will auto-standby without asking (default: `900`, set to `0` to disable)
+
 
 ## Debugging
 
